@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "656253642280",
+    "project_id": "doctorfinder-9abb7",
+    "storage_bucket": "doctorfinder-9abb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656253642280:android:992ccba254aaba7950b71d",
+        "android_client_info": {
+          "package_name": "com.bcmehdi.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656253642280-74fldsjkreu2ph4pkl29qpilt8c3pdn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bcmehdi.doctor",
+            "certificate_hash": "050fefa44940717851521e8aa07e826890205f26"
+          }
+        },
+        {
+          "client_id": "656253642280-0u0365k1rg5stfmjdfl57847134ld2ma.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRnizPyTrd2NN78-nr3yu7psE_X7RYqd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656253642280-0u0365k1rg5stfmjdfl57847134ld2ma.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
