@@ -1,6 +1,7 @@
 import 'package:doctor/core/constants/constants.dart';
 import 'package:doctor/core/utils/app_assets.dart';
 import 'package:doctor/core/widgets/circle_avatar.dart';
+import 'package:doctor/modules/home/page/widgets/popular_doctors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -14,8 +15,10 @@ class HomePage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: TDefaultPadding),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _buildAppBar(),
+              _buildPopularDoctors(),
             ],
           ),
         ),
@@ -74,5 +77,9 @@ class HomePage extends StatelessWidget {
         ),
       ]),
     );
+  }
+
+  Widget _buildPopularDoctors() {
+    return const PopularDoctorsSection();
   }
 }

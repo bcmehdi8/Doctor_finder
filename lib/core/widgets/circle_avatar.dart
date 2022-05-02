@@ -7,23 +7,27 @@ class TCircleAvatar extends StatelessWidget {
     Key? key,
     this.fallBackText,
     this.isNetwork = false,
+    this.radius,
   }) : super(key: key);
 
   final String? imagePath;
   final String? fallBackText;
   final bool? isNetwork;
+  final double? radius;
 
   @override
   Widget build(BuildContext context) {
     bool isSvg = imagePath != null ? imagePath!.endsWith('svg') : false;
     return imagePath != null
         ? CircleAvatar(
+            radius: radius ?? 18,
             backgroundColor: Colors.grey,
             backgroundImage: AssetImage(
               imagePath!,
             ),
           )
         : CircleAvatar(
+            radius: radius ?? 18,
             backgroundColor: Colors.blueAccent,
             child: Text(
               fallBackText ?? "??",
