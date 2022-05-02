@@ -19,11 +19,10 @@ class TCircleAvatar extends StatelessWidget {
     return imagePath != null
         ? CircleAvatar(
             backgroundColor: Colors.grey,
-            child: isNetwork!
-                ? Image.network(imagePath!)
-                : isSvg
-                    ? SvgPicture.asset(imagePath!)
-                    : Image.asset(imagePath!))
+            backgroundImage: AssetImage(
+              imagePath!,
+            ),
+          )
         : CircleAvatar(
             backgroundColor: Colors.blueAccent,
             child: Text(
